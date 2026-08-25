@@ -66,7 +66,7 @@ const ForgotPassword = () => {
           onChange={(e) => setEmail(e.target.value)} 
           required 
         />
-        
+           
         {/* Disable button and show loader text when loading */}
         <button type="submit" disabled={isLoading} style={{ opacity: isLoading ? 0.7 : 1 }}>
           {isLoading ? 'Sending Request...' : 'Send Link'}

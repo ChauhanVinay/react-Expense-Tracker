@@ -134,7 +134,7 @@ const ExpenseForm = () => {
             Activate Premium
           </button>
         </div>
-      )}
+      )}    
 
    {/* 2. Show Premium Features (Theme Toggle & CSV) once activated */}
       {isPremium && (
@@ -161,7 +161,7 @@ const ExpenseForm = () => {
 
       <form onSubmit={handleAddOrUpdateExpense} style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
         <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Amount (₹)" required style={{ padding: '10px' }} />
-        <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Description" required style={{ padding: '10px' }} />
+        <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Description" required style={{ padding: '10px' }} />   
         <select value={category} onChange={(e) => setCategory(e.target.value)} required style={{ padding: '10px' }}>
           <option value="" disabled>Select Category</option>
           <option value="Food">Food</option>

@@ -16,7 +16,7 @@ const themeSlice = createSlice({
             state.isDarkTheme = !state.isDarkTheme;
         }
     },
-});
+});    
 
 export const themeActions = themeSlice.actions;
 export default themeSlice.reducer;

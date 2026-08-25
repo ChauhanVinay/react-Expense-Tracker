@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from './firebase'; 
+import { auth } from './Firebase'; 
 import './Login.css';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { authActions } from '../store/authSlice';
-
+   
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const dispatch = useDispatch();
 
-const  handleLogin = async (e) => {
+const  handleLogin = async (e) => {  
     e.preventDefault();
     setError('');
 

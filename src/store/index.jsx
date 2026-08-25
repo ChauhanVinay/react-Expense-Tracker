@@ -9,6 +9,6 @@ const store = configureStore({
         expense: expenseReducer,
         theme: themeReducer,
     },
-});
+});    
 
 export default store;

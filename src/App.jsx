@@ -6,7 +6,7 @@ import Welcome from './components/Welcome';
 import SignUp from './components/SignUp';
 import UpdateProfile from './components/UpdateProfile'; 
 import ForgotPassword from './components/ForgotPassword';
-
+  
 function App() {
 
   const isDarkTheme = useSelector((state) => state.theme.isDarkTheme);
