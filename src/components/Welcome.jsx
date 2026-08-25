@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'; 
 import { useNavigate } from 'react-router-dom';
-import { auth } from './firebase';
+import { auth } from './Firebase';
 import ExpenseForm from './ExpenseForm';
 import {  useDispatch } from 'react-redux';
 import { authActions } from "../store/authSlice";
